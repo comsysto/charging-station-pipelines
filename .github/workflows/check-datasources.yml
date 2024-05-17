@@ -4,8 +4,8 @@ name: Data source validity checks
 
 on:
   schedule:
-    # Runs the workflow every day at midnight
-    - cron: '0 0 * * *'
+    # Runs the workflow every Friday at 8am
+    - cron: '0 8 * * 5'
 
 env:
   DB_NAME: gis

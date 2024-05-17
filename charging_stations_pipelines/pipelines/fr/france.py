@@ -46,7 +46,7 @@ class FraPipeline(Pipeline):
     @staticmethod
     def download_france_gov_file(target_file):
         """Download a file from the French government website."""
-        base_url = "https://transport.data.gouv.fr/resources/81548"
+        base_url = "https://transport.data.gouv.fr/resources/81623"
 
         r = requests.get(base_url, headers={"User-Agent": "Mozilla/5.0"})
         soup = BeautifulSoup(r.content, "html.parser")
